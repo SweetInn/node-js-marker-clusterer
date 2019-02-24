@@ -1232,6 +1232,10 @@ ClusterIcon.prototype.createCss = function(pos) {
         this.height_ + 'px; width:' + this.width_ + 'px; text-align:center;');
   }
 
+  if(this.width_ && this.height_) {
+    style.push(`background-size: contain;`);
+  }
+
   var txtColor = this.textColor_ ? this.textColor_ : 'black';
   var txtSize = this.textSize_ ? this.textSize_ : 11;
 
