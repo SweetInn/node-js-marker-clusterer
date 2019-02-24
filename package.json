@@ -1,6 +1,6 @@
 {
   "name": "node-js-marker-clusterer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publishConfig": {
     "registry": "http://ci-cd.nexus.sweetinn-app.net:8081/repository/sweetinn-npm-hosted/"
   },
