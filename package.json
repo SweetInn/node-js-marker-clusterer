@@ -1,6 +1,10 @@
 {
   "name": "node-js-marker-clusterer",
   "version": "1.0.0",
+  "publishConfig": {
+    "registry": "http://ci-cd.nexus.sweetinn-app.net:8081/repository/sweetinn-npm-hosted/"
+  },
+  "buildTarget": "nexus",
   "description": "Wrapper of js-marker-clusterer for node usage from the original https://github.com/googlemaps/js-marker-clusterer",
   "author": "Andrei Preda",
   "main": "src/markerclusterer.js",
