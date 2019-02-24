@@ -101,7 +101,7 @@ pipeline {
       }
       steps {
         sh "npm install"
-        sh "npm run lint"
+        // sh "npm run lint"
         // sh "npm run test:unit:cover"
         sh """
             if [ ${BRANCH_NAME} == 'npm-ready' ] && [ ${buildTarget} == 'nexus' ]
