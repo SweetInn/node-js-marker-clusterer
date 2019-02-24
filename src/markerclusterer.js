@@ -1195,7 +1195,7 @@ ClusterIcon.prototype.useStyle = function() {
  * @param {google.maps.LatLng} center The latlng to set as the center.
  */
 ClusterIcon.prototype.setCenter = function(center) {
-  this.center_ = center;
+  this.center_ = google.maps.geometry ? google.maps.geometry.spherical.computeOffset(center, 10, 0) : center;
 };
 
 
